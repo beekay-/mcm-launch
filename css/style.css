@@ -238,7 +238,7 @@ input[type="text"]:focus {
     padding-left: 1em;
 }
 
-.wf-button {
+.wf-button, button {
     color: #fff;
     background: #0090ff;
     margin: 20px 0 0 20px;
