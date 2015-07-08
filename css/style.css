@@ -1,0 +1,252 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background: url('../img/bg.png');
+    background-size: 250px;
+    font-family: 'Quicksand', Arial, sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    color: #444;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+#container {
+    margin: 0 auto;
+    max-width: 780px;
+    display: table;
+    height: 100vh;
+}
+
+.logo {
+    padding: 2em;
+    text-align: center;
+}
+
+.content {
+    display: table-cell;
+    vertical-align: middle;
+    float: left;
+}
+
+h1 {
+    font-family: 'Roboto Slab';
+    font-size: 3.5em;
+    font-weight: 700;
+    color: #33AD5B;
+    letter-spacing: -1px;
+}
+
+h2 {
+    padding: 0.875em;
+    font-size: 0.875em;
+    color: #F7B011;
+}
+
+p {
+    line-height: 150%;
+    padding: 0.875em;
+}
+
+.clock {
+    width: auto;
+    padding: 2em;
+    display: inline-block;
+}
+
+input, button {
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    height: 30px;
+}
+
+input[type="text"]:focus {
+    border: 1px solid #F7B011;
+}
+
+.wf-formTpl {
+    width: auto;
+    padding: 0;
+    text-align: center;
+    display: inline-block;
+}
+
+.wf-button {
+    margin: 1em 0;
+}
+
+.wf-sortable li {
+    float: left;
+}
+
+.wf-name,
+.wf-email {
+    text-align: left;
+    line-height: 125%;
+}
+
+.wf-email {
+    padding-left: 1em;
+}
+
+.wf-button {
+    color: #fff;
+    background: #0090ff;
+    margin: 20px 0 0 20px;
+    border: 0;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.wf-button:hover {
+    background: #00baff;
+    transition: all 0.3s;
+}
