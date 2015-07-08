@@ -1,16 +1,9 @@
-var clock;
 $(document).ready(function () {
-    var clock;
-    clock = $('.clock').FlipClock({
+    var date = new Date(2015, 6, 20);
+    var now = new Date();
+    var diff = (date.getTime() / 1000) - (now.getTime() / 1000);
+    var clock = $('.clock').FlipClock(diff, {
         clockFace: 'DailyCounter',
-        autoStart: false,
-        callbacks: {
-            stop: function () {
-                $('.message').html('Fasten your seat belts! It is coming.')
-            }
-        }
+        countdown: true
     });
-    clock.setTime(1058462);
-    clock.setCountdown(true);
-    clock.start();
 });
