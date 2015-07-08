@@ -154,8 +154,6 @@ body {
     padding: 0;
     margin: 0;
     text-align: center;
-    overflow: hidden;
-    line-height: 1;
 }
 
 #container {
@@ -182,13 +180,11 @@ h1 {
     font-weight: 700;
     color: #33AD5B;
     letter-spacing: -1px;
-    padding: 0;
 }
 
 h2 {
-    font-size: 2.750em;
-    font-weight: 400;
-    color: #0090ff;
+    font-size: 2em;
+    padding: 1em;
 }
 
 h3 {
@@ -204,7 +200,6 @@ p {
 
 .clock {
     width: auto;
-    padding: 1em;
     display: inline-block;
 }
 
@@ -220,7 +215,7 @@ input[type="text"]:focus {
 
 .wf-formTpl {
     width: auto;
-    padding: 0;
+    padding: 2em;
     text-align: center;
     display: inline-block;
 }
@@ -257,4 +252,14 @@ input[type="text"]:focus {
 .wf-button:hover {
     background: #00baff;
     transition: all 0.3s;
+}
+
+@media screen (max-width:32em) {
+    .wf-name, .wf-email {
+        width: 50%;
+    }
+    .wf-button {
+        margin: 0;
+        width: 100%;
+    }
 }
