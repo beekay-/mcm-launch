@@ -148,23 +148,24 @@ body {
     background: url('../img/bg.png');
     background-size: 250px;
     font-family: 'Quicksand', Arial, sans-serif;
-    font-size: 1em;
+    font-size: 0.913em;
     font-weight: 400;
     color: #444;
-    padding: 0;
+    padding: 2em 1em;
     margin: 0;
     text-align: center;
 }
 
 #container {
     margin: 0 auto;
-    max-width: 780px;
+    max-width: 960px;
     display: table;
     height: 100vh;
 }
 
 .logo {
-    padding: 2em;
+    padding-top: 4%;
+    padding-bottom: 2%;
     text-align: center;
 }
 
@@ -176,15 +177,18 @@ body {
 
 h1 {
     font-family: 'Roboto Slab';
-    font-size: 3.5em;
+    font-size: 2em;
     font-weight: 700;
     color: #33AD5B;
-    letter-spacing: -1px;
+    line-height: 150%;
 }
 
 h2 {
     font-size: 2em;
-    padding: 1em;
+    line-height: 150%;
+    color: #F7B011;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 h3 {
@@ -195,7 +199,11 @@ h3 {
 
 p {
     line-height: 150%;
-    padding: 0.875em;
+    padding: 0.5em;
+}
+
+strong {
+    font-weight: 700;
 }
 
 .clock {
@@ -203,45 +211,43 @@ p {
     display: inline-block;
 }
 
-input, button {
-    border-radius: 3px;
-    border: 1px solid #ccc;
+input,
+button {
+    border-radius: 2px;
+    border: 2px solid #ccc;
     height: 30px;
 }
 
+textarea,
+input {
+    outline: none;
+}
+
 input[type="text"]:focus {
-    border: 1px solid #F7B011;
+    border: 2px solid #F7B011;
 }
 
 .wf-formTpl {
     width: auto;
-    padding: 2em;
+    padding-top: 2%;
     text-align: center;
     display: inline-block;
-}
-
-.wf-button {
-    margin: 1em 0;
 }
 
 .wf-sortable li {
     float: left;
 }
 
-.wf-name,
 .wf-email {
-    text-align: left;
-    line-height: 125%;
+    margin: 0 1em;
 }
 
-.wf-email {
-    padding-left: 1em;
-}
-
-.wf-button, button {
+.wf-button,
+button {
     color: #fff;
     background: #0090ff;
-    margin: 20px 0 0 20px;
+    border: 2px solid #0076ff !important;
+    margin: 21px 0 0 0;
     border: 0;
     cursor: pointer;
     transition: all 0.3s;
@@ -250,16 +256,19 @@ input[type="text"]:focus {
 }
 
 .wf-button:hover {
-    background: #00baff;
+    background: #0080ff;
+    border: 2px solid #0076ff;
     transition: all 0.3s;
 }
 
-@media screen (max-width:32em) {
-    .wf-name, .wf-email {
-        width: 50%;
-    }
-    .wf-button {
-        margin: 0;
-        width: 100%;
-    }
+
+.wf-name,
+.wf-email {
+    text-align: left;
+    line-height: 150%;
+    font-weight: 700;
+}
+
+.wf-input {
+    width: 105px;
 }
