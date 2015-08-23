@@ -254,9 +254,9 @@ p {
 }
 
 #mcm-character {
-    background: url("../img/master-class-money-character.png") bottom center no-repeat;
-    background-size: contain;
-    height: 780px;
+    /*background: url("../img/master-class-money-character.png") bottom center no-repeat;
+    background-size: contain;*/
+    height: auto;
 }
 
 strong {
