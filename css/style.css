@@ -687,7 +687,7 @@ img.happy-users {
     .button {
         margin: 0.5em 0;
     }
-    .grid .half {
+    .grid .half, .grid .one-third {
         width: 100% !important;
     }
     .unit .grid .unit {
