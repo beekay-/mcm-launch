@@ -362,6 +362,15 @@ li.coin {
     padding-left: 24px;
 }
 
+ol {
+    list-style-type: decimal;
+    padding: 0 20px;
+}
+
+ol li {
+    margin: 32px 0;
+}
+
 .button {
     padding: 1em 1.5em;
     margin: 0;
